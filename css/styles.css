@@ -6,6 +6,7 @@
   --logo-color: #4d5ae5;
   --text-footer-color: #e7e9fc;
   --btn-color: #4d5ae5;
+  --cards-color-: #4d5ae555;
   --btn-white-color: #f4f4fd;
   --client-logo-color: #8e8f99;
   --footer-link-color: #31d0aa;
@@ -108,6 +109,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -122,6 +124,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-mail:hover,
@@ -250,6 +253,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -308,6 +312,7 @@ button {
 
 .shadow-link {
   display: block;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .shadow-link:hover,
@@ -421,6 +426,7 @@ button {
 
 .customer-logo-icon {
   fill: var(--client-logo-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-logo:hover,
@@ -438,6 +444,7 @@ button {
   justify-content: center;
   align-items: center;
   fill: var(--client-logo-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========== PORTFOLIO ================= */
@@ -478,6 +485,7 @@ button {
   order: 2;
   flex-grow: 0;
   display: block;
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {
@@ -509,7 +517,17 @@ button {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.shadow-link:hover .overlay .shadow-link:focus .overlay {
+/* .portfolio-card:hover .overlay {
+  transform: translate(0, 0);
+} */
+
+.shadow-link:hover .overlay,
+.shadow-link:focus .overlay {
+  transform: translate(0, 0);
+}
+
+.shadow-link:hover .overlay,
+.shadow-link:focus .overlay {
   transform: translate(0, 0);
 }
 
@@ -522,8 +540,7 @@ button {
   overflow-y: auto;
   transform: translate(0, 100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  background-color: var(--btn-color);
+  background-color: var(--cards-color-);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -532,7 +549,7 @@ button {
   padding: 40px 32px;
 }
 
-shadow-link .portfolio-photo {
+.portfolio-photo {
   position: relative;
   overflow: hidden;
 }
@@ -547,6 +564,7 @@ shadow-link .portfolio-photo {
   height: 40px;
   border-radius: 50%;
   background-color: var(--logo-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
@@ -557,6 +575,7 @@ shadow-link .portfolio-photo {
   height: 40px;
   border-radius: 50%;
   background-color: var(--social-link-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list {
