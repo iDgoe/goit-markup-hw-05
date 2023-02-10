@@ -15,7 +15,6 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -64,7 +63,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -429,10 +430,15 @@
       </div>
     </footer>
     <!-- /* ========= /FOOTER ============ */ -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-clise-btn"></button>
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
