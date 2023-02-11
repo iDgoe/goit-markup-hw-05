@@ -85,6 +85,7 @@ button {
 
 .nav-list {
   display: flex;
+  gap: 40px;
 }
 
 .strategy-list {
@@ -160,10 +161,6 @@ button {
 
 .color-logo {
   color: var(--logo-color);
-}
-
-.menu-item:not(:last-child) {
-  margin-right: 40px;
 }
 
 .strategy-block {
